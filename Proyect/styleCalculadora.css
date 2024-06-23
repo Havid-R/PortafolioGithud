@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+body{
+    background-image: url(/sas/calculadora3.avif);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
+.fondos{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.base {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+.pantalla{
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+#pantalla{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    padding-right: 10%;
+}
+#numeroPantalla{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    padding-right: 5%;
+    font-size: small;
+}
+.numeros{
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+    backdrop-filter: blur(1px);    
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+ }
+.teclas{
+    background-color: #58585893;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}
+.teclas:hover{
+    background-color: #88888893;
+    border: 2px solid #6292ec; 
+    box-shadow: 0 0 10px #6292ec, 0 0 20px #6292ec, 0 0 30px #6292ec; 
+}
+.teclasBajas{
+    background-color: #58585800;
+    border: none;
+}
+.teclasBajas:hover{
+    background-color: #58585800;
+    border: none;
+    box-shadow: none;
+}
+/*cientifica*/
+.contenedor{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(0px);
+    display: none;
+}

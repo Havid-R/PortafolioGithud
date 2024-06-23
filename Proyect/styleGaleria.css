@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    height: 100vh;
+    width: 100vw;
+}
+.galeria {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 80, 90);
+    padding: 10px;
+    height: auto;
+    width: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: transparent transparent; /* Para Firefox */
+}
+.galeria:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* Para Firefox */
+}
+
+/* Para Chrome, Edge, y Safari */
+.galeria::-webkit-scrollbar {
+    width: 12px;
+}
+
+.galeria::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.galeria:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: transparent;
+}
+
+.imagen {
+    margin: 5px;
+}
+.imagen img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal {
+    margin: 0;
+    display: none;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 82%;
+    height: auto;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.cerrar{
+    background-color: rgb(69, 80, 90);
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    cursor: pointer;
+}
+#lni_lni-angle-double-left{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    cursor: pointer;
+}
+#lni_lni-angle-double-right{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    cursor: pointer;
+}

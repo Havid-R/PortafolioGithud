@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --color-welcome:rgb(73,73,73);
+  --color-whiter: #fff;
+  --color-menu: rgb(20,32,43);
+  --color-hover:  rgb(25, 93, 156);
+}
+/*telefono*/
+
+/*WELCOME*/
+span{
+  color: var(--color-hover);
+}
+.hide {
+  display: none;
+}
+.FondoWelcome {
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-menu) ;
+    color: var(--color-whiter);
+  }
+  
+  .accompanist1 {
+    border-radius: 58% 30% 48% 20% / 36% 44% 30% 54%;
+    border: 2px solid;
+    width: 820px;
+    height: 610px;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    animation:  rotate-reverse 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+.accompanist2 {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 58% 80% 30% 20% / 15% 70% 20% 80%;
+  border: 2px solid;
+  width: 220px;
+  height: 210px;
+  z-index: 1;
+  animation:  rotate-reverse 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+.accompanist3 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 58% 30% 48% 20% / 36% 44% 30% 54%;
+  border: 2px solid;
+  width: 320px;
+  height: 310px;
+  z-index: 1;
+  animation:  rotate 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+.accompanist4 {
+  margin: 0;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  border-radius: 58% 30% 48% 20% / 36% 44% 30% 54%;
+  border: 2px solid;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  animation:  rotate 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.circuloWelcome1{
+   
+    border-radius: 58% 30% 48% 20% / 36% 44% 30% 54%;
+    border: 2px solid;
+    width: 320px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    animation:  rotate-reverse 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.circuloWelcome2{
+    border-radius: 58% 30% 48% 20% / 36% 44% 30% 54%;
+    background: radial-gradient(circle, rgba(183,199,199,0) 0%, rgba(242,241,238,1) 100%);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    animation:  rotate 3s linear infinite, deform 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+.FondoWelcome h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 90px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    text-shadow: 13px 13px 0px rgba(0,0,0,0.1);
+}
+
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%,-50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%,-50%) rotate(360deg);
+      }
+}
+
+@keyframes deform {
+    0%, 100% {
+      border-radius: 50%;
+    }
+    50% {
+      border-radius: 40% 60% 70% 30%;
+    }
+    75% {
+      border-radius: 30% 70% 50% 50%;
+    }
+}
+@keyframes rotate-reverse {
+  from {
+      transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+      transform: translate(-50%,-50%) rotate(-360deg);
+  }
+}
+/*WELCOME_END*/
+
+ /*Header*/
+
+ header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--color-menu);
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: var(--color-whiter);
+ }
+ 
+header ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: var(--color-whiter);
+}
+a{
+  text-decoration: none;
+}
+header ul li a{
+  color: var(--color-whiter);
+}
+header ul li a:hover{
+  color: var(--color-hover);
+}
+/*main*/
+.Bigsection{
+ display: flex;
+ flex-direction: row;
+ background-color: var(--color-whiter);
+}
+/*section1*/
+.section1{
+  width: 50%;
+  height: 95vh;
+  background-color: var(--color-menu);
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.circuloFoto{
+  border-radius: 38%  40% 62% 30% /  60% 54% 46% 34%;
+  background: radial-gradient(circle, rgba(20,32,43,0) 0%, rgba(255,255,255,1) 100%);
+  height: 350px;
+  width: 350px;
+  z-index: 100;
+  transform: rotate(100deg);
+  animation: 2s mov linear infinite alternate;
+}
+@keyframes mov {
+  0% {
+    border-radius: 58% 42% 38% 62% / 60% 54% 46% 34%;
+}
+100% {
+    border-radius: 72% 28% 45% 55% / 60% 54% 46% 34%;
+
+}
+}
+.circuloFoto2{
+  border-radius: 38%  40% 62% 30% /  60% 54% 46% 34%;
+  background: radial-gradient(circle, rgba(183,199,199,0) 0%, rgba(242,241,238,1) 100%);
+  height:350px;
+  width: 350px;
+  z-index: 0;
+  transform: rotate(100deg);
+  animation: 2s mov linear infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subsection1{
+  display: flex;
+  flex-direction: column;
+}
+.temas{
+  margin-top: 30px;
+  background:  rgba(255, 255, 255, 0.5);
+  width: 300px;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+  color: var(--color-menu);
+}
+.ImgP{
+  border-radius: 20px;
+  width: 150px;
+  transform: rotate(150deg);
+}
+
+/*section2*/
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.subsection2{
+ color: var(--color-menu);
+}
+.subsection2 h1{
+  font-size: 50px;
+}
+.subsection2 h2{
+  font-size: 50px;
+}
+.contenedorP{
+  margin-top: 20px;
+  width: 500px; 
+}
+
+/*button*/
+.buttonP{
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.buttonBigcontenedor {
+  width: 35px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.animated-arrow {
+  animation: arrow-animation 1s infinite;
+}
+
+@keyframes arrow-animation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/*proyectos*/
+.tituloProyect{
+  background-color: var(--color-menu);
+  color: var(--color-whiter);
+  text-align: center;
+  font-size: 50px;
+  padding-top: 40px;
+}
+.fondoProyect{
+  background: var(--color-menu);
+  height: 88vh;
+  border-radius: 0 0 160% 0;
+  z-index: -1;
+}
+.Bigproyec {
+  position: relative;
+}
+
+.Proyect {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+}
+.proyectVista{
+  margin-left: 100px;
+  width: 700px;
+  height: 500px;
+  border-radius: 36% 44% 30% 54% / 58% 30% 48% 20%;
+  background: rgba(183, 199, 199, 0.612);
+  animation: 2s movInv linear infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subproyectVista{
+  width: 650px;
+  height: 500px;
+  border-radius: 58% 30% 48% 20% / 36% 44% 30% 54% ;
+  background: rgba(183, 199, 199, 0.61);
+  animation: 2s mov linear infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes movInv {
+  0% {
+    border-radius: 36% 44% 30% 54% / 58% 30% 48% 20%;
+  }
+  100% {
+    border-radius:  80% 30% 48% 20% / 50% 44% 30% 54%;
+  }
+}
+.ImgT{
+  width: 700px;
+  border-radius: 38% 2% / 80% 4%;
+  animation: 6s imgMov linear infinite alternate;
+}
+
+.proyectLista{
+  margin-top: 25px;
+}
+.proyectLista li{
+  border-radius: 0 20px 0 20px;
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(183, 199, 199, 0.61);
+  overflow: hidden; 
+  transition: height 0.3s ease; 
+}
+.proyectLista li a{
+  color: var(--color-welcome);
+}
+.proyectLista li a:hover{
+  color: var(--color-whiter);
+}
+.proyectLista li:hover{
+  height: 100px; 
+  background-color: rgba(183, 199, 199, 0.89);
+}
+.proyectLista li:hover a {
+  display: block;
+}
+.proyectLista li .Inf{
+  font-size: smaller;
+  border-radius: 20px 0 20px 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(25, 93, 156, 0.541);/*colorDelProyect*/
+  position: absolute;
+  bottom: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: var(--color-whiter);
+  text-align: center;
+  padding: 10px;
+}
+.proyectLista li .Inf1{
+  font-size: smaller;
+  border-radius: 20px 0 20px 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(115, 25, 156, 0.541);/*colorDelProyect*/
+  position: absolute;
+  bottom: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: var(--color-whiter);
+  text-align: center;
+  padding: 10px;
+}
+.proyectLista li .Inf2{
+  font-size: smaller;
+  border-radius: 20px 0 20px 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(156, 132, 25, 0.541);/*colorDelProyect*/
+  position: absolute;
+  bottom: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: var(--color-whiter);
+  text-align: center;
+  padding: 10px;
+}
+.proyectLista li .Inf3{
+  font-size: smaller;
+  border-radius: 20px 0 20px 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(25, 156, 95, 0.521);/*colorDelProyect*/
+  position: absolute;
+  bottom: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: var(--color-whiter);
+  text-align: center;
+  padding: 10px;
+}
+.proyectLista li .Inf4{
+  font-size: smaller;
+  border-radius: 20px 0 20px 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(156, 25, 25, 0.541);/*colorDelProyect*/
+  position: absolute;
+  bottom: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: var(--color-whiter);
+  text-align: center;
+  padding: 10px;
+}
+
+.proyectLista li:hover .Inf{
+  opacity: 1; 
+}
+.proyectLista li:hover .Inf1{
+  opacity: 1; 
+}
+.proyectLista li:hover .Inf2{
+  opacity: 1; 
+}.proyectLista li:hover .Inf3{
+  opacity: 1; 
+}.proyectLista li:hover .Inf4{
+  opacity: 1; 
+}
+@keyframes imgMov {
+  0% {
+    border-radius: 38% 2% / 80% 4%;
+  }
+  100% {
+    border-radius: 5% 72% / 54% 60%;
+  }
+}
+
+/*experience*/
+.Bigexperience{
+  height: 100vh;
+  position: relative;
+}
+.fondoExperience{
+  background: var(--color-menu);
+  height: 100vh;
+  border-radius: 120% 0 0 0;
+  z-index: -1;
+}
+.tituloE{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-size: 40px;
+}
+
+.tituloE h2 {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(20, 32, 43) 100%);
+  background-size: 200% auto;
+  color: var(--color-whiter);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s infinite;
+}
+
+.experience{
+  margin-top: 50px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  padding: 20px;
+  color: var(--color-welcome);
+  border: 2px solid  rgba(183, 199, 199, 0.61);
+  border-radius: 10% 20% / 60%;
+}
+.experience div {
+  background-color: rgba(183, 199, 199, 0.61);
+  font-size: 20px;
+  padding: 35px;
+  border-radius: 10% 20% / 60%;
+}
+/*Footer*/
+footer{
+  position: relative;
+  height: 40vh;
+}
+.fondofooter{
+  background: var(--color-menu);
+  height: 80vh;
+  border-radius: 0 0 0 160%;
+  z-index: -1;
+}
+.Bigfooter{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.Contact {
+  width: 400px;
+  height: 150px;
+  background: rgba(183, 199, 199, 0.61);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 50px;
+}
+.Contact h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Contact li{
+margin-left: 50px;
+}
+@media screen and (max-width: 800px) {
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--color-menu);
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 5%;
+    color: var(--color-whiter);
+    font-size: 10px;
+   }
+
+  header ul li a{
+    font-size: 12px;
+  }
+  .Bigsection{
+    flex-direction: column;
+    align-items: center;
+   }
+   .section1{
+    width: 100%;
+  }
+  .circuloFoto{
+    height: 250px;
+    width: 250px;
+    transform: rotate(100deg);    
+  }
+  .circuloFoto2{
+    height:250px;
+    width: 250px;
+    transform: rotate(150deg);
+    }
+
+  .temas{
+    display: none;
+  }
+  .ImgP{
+    border-radius: 40px;
+    width: 110px;
+    transform: rotate(110deg);
+  }
+  .section2 {
+    background-color: var(--color-whiter);
+    position: absolute;
+    top: 47%;
+    width: 92%;
+    border-radius: 35px;
+    padding: 3%;
+  }
+  .subsection2 h1{
+    text-align: center;
+  }
+  .subsection2 h2{
+  display: none;
+  }
+  .contenedorP{
+    margin-top: 10px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;  
+  }
+  .contenedorP p{
+    width: 80%;
+  }
+  .Proyect {
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items: center;
+  }
+  .proyectVista{
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 400px;
+    height: 200px;
+  }
+  .subproyectVista{
+    width: 350px;
+    height: 200px;
+  }
+
+  .ImgT{
+    width: 350px;
+    }
+    .proyectLista{
+      margin-top: 25px;
+    }
+    .proyectLista li{
+      border-radius: 0 20px 0 20px;
+      font-size: 20px;
+      list-style: none;
+      margin-bottom: 10px;
+      width: 350px;
+      height: 40px;
+      background-color: rgba(9, 182, 182, 0.61);
+    }
+
+    .proyectLista li:hover{
+      height: 80px; 
+    }
+    .proyectLista li .Inf{
+      display: none;
+    }
+    .proyectLista li .Inf1{
+      display: none;
+ }
+    .proyectLista li .Inf2{
+      display: none;
+    }
+    .proyectLista li .Inf3{
+      display: none;
+    }
+    .proyectLista li .Inf4{
+      display: none;
+    }
+
+    .tituloE{
+      top: 10%;
+      font-size: 30px;
+    }
+        
+    .experience{
+      top: 47%;
+      left: 50%;
+      width: 350px;
+      border-radius: 30px;
+    }
+    .experience div {
+      border-radius: 20px;
+    }
+    /*Footer*/
+    footer{
+      position: relative;
+      height: 40vh;
+    }
+
+    .Bigfooter{
+      position: absolute;
+      top: 1%;
+      left: 1%;
+      display: flex;
+      flex-direction: column;
+     }
+    .Contact {
+      margin: 10px;
+      width: 350px;
+      height: 200px;
+    }
+}
+    </style>
+    <title>Portafolio</title>
+    <script>
+        //Menu
+window.addEventListener("scroll", function() {
+    var header = document.getElementById('Menu');
+    var headerHeight = header.offsetHeight;
+    var navList = header.querySelector('ul');
+    if (window.pageYOffset > headerHeight) {
+        header.style.position = 'fixed';
+        header.style.zIndex = '99999999999';
+        header.style.width = '550px';
+        header.style.borderRadius = '0 0 20px 0';
+        navList.style.transform = 'translateX(0)';
+    } else {
+        header.style.position = '';
+        header.style.zIndex = '';
+        header.style.width = '';
+        header.style.borderRadius = '';
+        navList.style.transform = '';
+    }
+});
+//welcome
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('welcomeDiv').classList.add('hide');
+        document.getElementById('Home').classList.remove('hide');
+    }, 1500);
+}
+//lista hover
+document.addEventListener('DOMContentLoaded', function() {
+    var listItems = document.querySelectorAll('.proyectLista li');
+    var image = document.querySelector('.subproyectVista img');
+    listItems.forEach(function(listItem) {
+        listItem.addEventListener('mouseover', function() {
+            var link = this.querySelector('a');
+            if (link.href.includes('Taller/Taller1.html')) {
+                image.src = '/Taller/fotosT.png';
+            } else if (link.href.includes('/Img/P1..png')) {
+                image.src = '/Img/P1..png';
+            } else if (link.href.includes('/Img/P2.png')) {
+                image.src = '/Img/P2.png';
+            } else if (link.href.includes('/Img/P3.png')) {
+                image.src = '/Img/P3.png';
+            } else if (link.href.includes('/Img/P4.png')) {
+                image.src = '/Img/P4.png';
+            }
+        });
+        listItem.addEventListener('mouseout', function() {
+            image.src = '/Img/P4.png';
+        });
+    });
+});
+    </script>
+</head>
+<body>
+    <div class="FondoWelcome" id="welcomeDiv">
+        <div class="circuloWelcome1" >
+            <div class="circuloWelcome2" >
+            </div>
+        </div>
+        <h1 >WELCOME</h1>
+        <div class="accompanist1"></div>
+        <div class="accompanist2"></div>
+        <div class="accompanist3"></div>
+        <div class="accompanist4"></div>
+    </div>
+   <div class="hide" id="Home">
+    <header id="Menu">
+        <h1>
+            Havid<span>.</span>R
+        </h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Proyect">Proyecto</a></li>
+            <li><a href="#Experience">Experiencia</a></li>
+            <li><a href="#Contact">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="Bigsection">
+            <section class="section1">
+                <div class="subsection1">
+                    <div class="circuloFoto">
+                        <div class="circuloFoto2">
+                            <img src="/Img/p1.png" alt="Foto" class="ImgP">
+                        </div>
+                    </div>
+                    <div class="temas">
+                        <h2>Frontend-developer's</h2>
+                    </div>
+                </div>
+            </section>
+            <aside class="section2">
+                <div class="subsection2">
+                    <h2>
+                        Hello. I'm 
+                    </h2>
+                    <h1>
+                        Havid Reyes
+                    </h1>
+                    <div class="contenedorP">
+                        <p>Me apasiona el desarrollo web y la programación. Mi viaje en este fascinante mundo comenzó en Ademass y paginas como  w3schools , donde poco a poco adquirí habilidades fundamentales en desarrollo web y aprendí a crear soluciones innovadoras. Cada día es una nueva oportunidad para aprender algo nuevo y mejorar mis habilidades. ¡Estoy emocionado por lo que el futuro me depara en este campo!</p>
+                    </div>
+                </div>
+            </aside>
+            <div class="buttonP">
+                <div class="buttonBigcontenedor">
+                    <a href="#Proyect">
+                        <div class="buttonContenedor"></div>
+                        <svg class="animated-arrow" fill="#195d9c" width="52" height="52" version="1.1" id="lni_lni-arrow-down-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                        <g>
+                            <path d="M40.3,32l-6.1,6V20.7c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2V38l-6.1-6c-0.9-0.9-2.3-0.9-3.2,0c-0.9,0.9-0.9,2.3,0,3.2
+                            l9.9,9.8c0.4,0.4,1,0.6,1.6,0.6s1.1-0.2,1.6-0.6l9.9-9.8c0.9-0.9,0.9-2.3,0-3.2C42.6,31.1,41.2,31.1,40.3,32z"/>
+                            <path d="M32,1.7C15.3,1.7,1.8,15.3,1.8,32S15.3,62.3,32,62.3S62.2,48.7,62.2,32S48.7,1.7,32,1.7z M32,57.8
+                            C17.8,57.8,6.2,46.2,6.2,32S17.8,6.2,32,6.2c14.2,0,25.8,11.6,25.8,25.8S46.2,57.8,32,57.8z"/>
+                        </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>                       
+        </section> 
+        <section class="Bigproyec" id="Proyect">
+            <h2 class="tituloProyect">Proyect</h2>
+            <div class="fondoProyect">
+            </div>
+            <div class="Proyect">
+                <div class="proyectLista">
+                    <ul>
+                        <li><div><a href="/Taller/Taller1.html">Computer And Lapto</a></div> <div class="Inf"><p>Este es un proyecto personal que desarrollé como parte de un curso. El objetivo era replicar un trabajo de desarrollo frontend, lo que me permitió aplicar y mejorar mis habilidades en esta área.</p></div></li>
+                        <li><div><a href="/Img/P1..png">Prueba1</a></div><div class="Inf1"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quod. Nihil quisquam eum quas praesentium</p></div></li>
+                        <li><div><a href="/Img/P2.png">Prueba2</a></div><div class="Inf2"><p>asdasd</p></div></li>
+                        <li><div><a href="/Img/P3.png">Prueba3</a></div><div class="Inf3"><p>asdasd</p></div></li>
+                        <li><div><a href="/Img/P4.png">Ver Mas</a></div><div class="Inf4"><p>asdasd</p></div></li>
+                    </ul>
+                </div>
+                <div class="proyectVista">
+                    <div class="subproyectVista"><img src="/Img/P4.png" alt="Taller" class="ImgT"></div>
+                </div>
+            </div>
+        </section>
+        <section class="Bigexperience" id="Experience">
+            <div class="fondoExperience">
+            </div>
+            <div class="tituloE"><h2>Experiencia</h2></div>
+            <div class="experience">
+                <div>
+                    <p>Tengo conocimientos sólidos en HTML, CSS y JavaScript, y estoy en constante aprendizaje de bibliotecas de JS y otros lenguajes para profundizar aún más en este fascinante mundo de la programación. Aunque mi experiencia laboral puede ser limitada, he trabajado en varios proyectos personales que han fortalecido mis habilidades y me han dado una valiosa experiencia práctica.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="fondofooter">
+        </div>
+        <div class="Bigfooter">
+            <div class="Contact">
+                <h2>Servicios de Desarrollo Web</h2>
+                <p>¿Estás buscando un sitio web personalizado, una aplicación web interactiva o una solución de comercio electrónico? Como desarrollador web, ofrezco una variedad de servicios para ayudarte a construir tu presencia en línea.</p>
+            </div>
+            <div class="Contact" id="Contact">
+                <h2>Contactame</h2>
+                <ul>
+                    <li>elmonodekubin@gmail.com</li>
+                    <li>upwork</li>
+                    <li>linkend</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

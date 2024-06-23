@@ -1,0 +1,446 @@
+:root {
+    --primary-color: #4f4aa6;
+    --secondary-color: #48ca95;
+    --bg-color: #f7f7f7;
+    --ty-color: #ffffff;
+    --yt-color:#252525;
+    --section-title-font: Poppins-semiblod;
+    --text-font: Poppins Regular;
+    --menu-font: Poppins Bold;
+    --header-title-font: Poppins Extrabold;
+    --banner-tile-font: Poppins-Light;
+
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url(/Taller/recursos/fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Poppins-semiblod;
+    src: url(/Taller/recursos/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: Poppins Regular;
+    src: url(/Taller/recursos/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins Extrabold;
+    src: url(/Taller/recursos/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins Bold;
+    src: url(/Taller/recursos/fonts/Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+header {
+    background-image: url(/Taller/recursos/images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color:var(--ty-color);
+    min-height: 90vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;    
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--ty-color);
+    font-family: var(--menu-font);
+}
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+.header-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+.header-content-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.header-title {
+    font-size: 80px;
+    font-family: var(--menu-font);
+}
+.header-subtitle {
+    font-size: 40px;
+}
+.Btn {
+    color: var(--ty-color);
+    text-decoration: none;
+    border: 2px solid var(--ty-color);
+    padding: 15px 60px;
+    margin: 0px 5px;
+}
+.Btn:hover {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+.header-content-btns {
+    margin-top: 50px;
+}
+.header-img {
+    margin: 5px 25px;
+}
+.menu-movil {
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .menu-movil{
+        display: flex;
+    }
+    .menu-screen{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-content{
+        flex-direction: column;
+    }
+    .header-content-text{
+        margin-left: 10px
+        ;
+    }
+    .header-title {
+        font-size: 60px;
+    }
+    .header-subtitle {
+        font-size: 20px;
+    }
+    .header-content-text p {
+        font-size: 14px;
+    }
+    .Btn {
+        padding: 10px 30px;
+    }
+    .header-img {
+        margin: 50px 10px;
+        width: 95%;
+        height: 100%;
+        max-width: 500px;
+    }
+}
+/*card */
+.card-padre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+.card {
+    padding: 30px;
+    margin: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.card p {
+    text-align: center;
+}
+/*product*/
+.Products {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.section-title {
+    font-size: 26px;
+    font-family: var(--section-title-font);
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 25px;
+}
+.product {
+    width: 1100px;
+    background-color: var(--ty-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    margin-bottom: 100px;
+}
+.product-card {
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.product-card a {
+    background-color: var(--yt-color);
+    color: var(--ty-color);
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-family: var(--menu-font);
+   padding: 10px;
+}
+.button-product { 
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    padding: 15px 60px;
+    margin: 0px 5px;
+}
+@media screen and (max-width:1000px) {
+    .product{
+        width: 96%;
+    }
+}
+/*_Banner*/
+.banner{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 70px;
+}
+.banner-content{
+    color: var(--ty-color);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+.banner-content-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.banner-title {
+    font-size: 48px;
+    font-family: var(--text-font);
+}
+.banner-subtitle {
+    font-size: 20px;
+    font-family: var(--banner-tile-font);
+}
+.Btn-banner {
+    color: var(--ty-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    padding: 15px 60px;
+    margin: 0px 5px;
+    background-color: var(--secondary-color);
+}
+.Btn-banner:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.banner-content-btns {
+    margin-top: 50px;
+}
+@media screen and (max-width: 800px) {
+    .banner-content{
+        flex-direction: column;
+    }
+}
+/*Reviews section*/
+.reviews {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.reviews-card {
+    width: 800px;
+}
+.reviews-card h5 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+    .reviews-card{
+        width: 96%;
+    }
+}
+/*form section*/
+.contact {
+    background-image: url(/Taller/recursos/images/contact_g.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact-form {
+    border: 1px solid var(--ty-color);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+.section-title-white {
+    color: var(--ty-color);
+    font-size: 26px;
+    font-family: var(--section-title-font);
+    border-bottom: 1px solid var(--ty-color);
+    margin-bottom: 25px;
+}
+.contact-input {
+    width: 100%;  
+    height: 40px;
+    margin: 10px 0px; 
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--ty-color);
+    color: var(--ty-color);
+    box-shadow: none;
+    outline: none;
+}
+::placeholder {
+    color: var(--ty-color);
+    opacity: 1;
+}
+::-moz-placeholder{
+    color: var(--ty-color);
+    opacity: 1;
+
+}
+.contact-textarea {
+    color: var(--ty-color);
+    background-color: transparent;
+    margin: 10px 0px; 
+    padding: 10px;
+    border: 1px solid var(--ty-color);
+    box-shadow: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.contact-btn {
+    background-color: var(--secondary-color);
+    color: var(--ty-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    padding: 15px 60px;
+    max-width: 150px;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+@media screen and (max-width:800px) {
+    .contact-form {
+        width: 96%;
+    }
+}
+/*footer*/
+footer {
+    background-image: url(/Taller/recursos/images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.copyright {
+    color: var(--ty-color);
+    border-top: 1px solid  var(--ty-color);
+    width: 1200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.footer-content {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.footer-card {
+    width: 300px;
+    padding: 10px;
+    color: var(--ty-color);
+}
+.footer-card h5 {
+    font-size: 20px;
+}
+.footer-card p {
+    font-size: 14px;
+}
+.footer-card form {
+    display: flex;
+    flex-direction: column;
+}
+.sub-input {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 0;
+    font-family: var(--section-title-font);
+}
+.footer-btn {
+    background-color: var(--secondary-color);
+    color: var(--ty-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    padding: 7px 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 130px;
+}
+.social-icons a {
+    color: var(--ty-color);
+    font-size: 24px;
+    margin: 5px;
+}
+@media screen and (max-width:1200px) {
+    .footer-btn {
+        width: 96%;
+    }
+    .social-icons {
+        width: 96%;
+    }
+}
